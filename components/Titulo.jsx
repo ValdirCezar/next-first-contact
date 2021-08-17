@@ -1,9 +1,13 @@
 export default function Titulo(props) {
-git    //console.log(props);
+   //console.log(props);
    return (
-      <>
-         <h1>{props.principal}</h1>
-         <h2>{props.secundario}</h2>
-      </>
+      props.pequeno ?
+         <>
+            <p>{props.principal}</p>
+            <p>{props.secundario}</p>
+         </> : <>
+            <h1>{props.principal}</h1>
+            <h2>{props.secundario}</h2>
+         </>
    )
 }
